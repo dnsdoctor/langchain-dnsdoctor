@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "langchain-dnsdoctor"
+version = "0.1.0"
+description = "LangChain tools for DNS Doctor: scan, diagnose and fix a domain's SPF, DMARC and DKIM, check global DNS propagation, audit SPF includes. Deterministic verdicts and copy-paste records from dnsdoctor.dev, never a guessed record."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "DNS Doctor", email = "hello@dnsdoctor.dev" }]
+keywords = ["langchain", "dns", "dmarc", "spf", "dkim", "email-security", "agent-tools", "x402"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Internet :: Name Service (DNS)",
+  "Topic :: Communications :: Email",
+  "Typing :: Typed",
+]
+dependencies = ["langchain-core>=1.0,<2", "httpx>=0.27"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pytest-asyncio>=0.24", "langchain-tests>=1.0"]
+
+[project.urls]
+Homepage = "https://dnsdoctor.dev"
+Repository = "https://github.com/dnsdoctor/langchain-dnsdoctor"
+"API reference" = "https://dnsdoctor.dev/api/v1/docs"
+Changelog = "https://github.com/dnsdoctor/langchain-dnsdoctor/releases"
+
+[tool.hatch.build.targets.wheel]
+packages = ["langchain_dnsdoctor"]
+
+[tool.hatch.build.targets.sdist]
+include = ["langchain_dnsdoctor", "tests", "README.md", "LICENSE", "pyproject.toml"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests/unit_tests"]
+markers = ["integration: hits the live dnsdoctor.dev API"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+strict = true
