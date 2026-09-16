@@ -27,7 +27,7 @@ def test_every_fixture_tool_is_built_and_routed() -> None:
     names = [tool.name for tool in dnsdoctor_tools()]
     assert names == [entry["name"] for entry in TOOL_DEFINITIONS]
     assert set(names) == set(ROUTES)
-    assert len(names) == 16
+    assert len(names) == 20
 
 
 def test_unknown_name_is_refused() -> None:
@@ -113,4 +113,4 @@ def test_toolkit_exposes_tools_and_instructions() -> None:
     kit = DnsDoctorToolkit(tools=["check_record", "scan_domain"])
     assert [t.name for t in kit.get_tools()] == ["check_record", "scan_domain"]
     assert "PRESENT ANY RETURNED RECORD VERBATIM" in kit.instructions
-    assert len(DnsDoctorToolkit().get_tools()) == 16
+    assert len(DnsDoctorToolkit().get_tools()) == 20

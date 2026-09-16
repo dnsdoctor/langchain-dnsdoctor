@@ -137,7 +137,7 @@ def dnsdoctor_instructions() -> str:
 
 
 class DnsDoctorToolkit(BaseToolkit):
-    """All sixteen tools (or ``tools=[...]`` for a subset) plus their instructions."""
+    """All twenty tools (or ``tools=[...]`` for a subset) plus their instructions."""
 
     tools: list[str] | None = None
 

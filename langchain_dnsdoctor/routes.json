@@ -1,18 +1,83 @@
 {
-  "audit_spf_includes": {"kind": "json", "path": "/api/tools/spf-audit"},
-  "build_dmarc_upgrade": {"kind": "json", "path": "/api/v1/dmarc-upgrade"},
-  "build_parked_domain_records": {"kind": "json", "path": "/api/tools/parked-domain-records"},
-  "check_dkim_selector": {"kind": "json", "path": "/api/tools/dkim-check"},
-  "check_propagation": {"kind": "json", "path": "/api/tools/propagation-check"},
-  "check_record": {"kind": "json", "path": "/api/tools/check-record"},
-  "check_reverse_dns": {"kind": "json", "path": "/api/tools/reverse-dns-check"},
-  "count_spf_lookups": {"kind": "json", "path": "/api/tools/spf-count"},
-  "generate_dmarc_record": {"kind": "json", "path": "/api/tools/dmarc-generate"},
-  "get_alerts": {"kind": "query", "path": "/api/v1/alerts"},
-  "get_readiness": {"kind": "query", "path": "/api/v1/readiness"},
-  "get_report": {"kind": "report"},
-  "parse_dmarc_report": {"kind": "upload", "path": "/api/tools/dmarc-report-parse", "field": "file"},
-  "scan_domain": {"kind": "json", "path": "/api/v1/scan"},
-  "start_monitoring_signup": {"kind": "json", "path": "/api/v1/signup-url"},
-  "validate_dmarc_record": {"kind": "json", "path": "/api/tools/dmarc-validate"}
+  "add_monitored_domain": {
+    "kind": "json",
+    "path": "/api/v1/domains"
+  },
+  "audit_spf_includes": {
+    "kind": "json",
+    "path": "/api/tools/spf-audit"
+  },
+  "build_dmarc_upgrade": {
+    "kind": "json",
+    "path": "/api/v1/dmarc-upgrade"
+  },
+  "build_parked_domain_records": {
+    "kind": "json",
+    "path": "/api/tools/parked-domain-records"
+  },
+  "check_dkim_selector": {
+    "kind": "json",
+    "path": "/api/tools/dkim-check"
+  },
+  "check_domain_verification": {
+    "kind": "json",
+    "path": "/api/v1/domains/verify"
+  },
+  "check_propagation": {
+    "kind": "json",
+    "path": "/api/tools/propagation-check"
+  },
+  "check_record": {
+    "kind": "json",
+    "path": "/api/tools/check-record"
+  },
+  "check_reverse_dns": {
+    "kind": "json",
+    "path": "/api/tools/reverse-dns-check"
+  },
+  "count_spf_lookups": {
+    "kind": "json",
+    "path": "/api/tools/spf-count"
+  },
+  "generate_dmarc_record": {
+    "kind": "json",
+    "path": "/api/tools/dmarc-generate"
+  },
+  "get_alerts": {
+    "kind": "query",
+    "path": "/api/v1/alerts"
+  },
+  "get_domain_records": {
+    "kind": "query",
+    "path": "/api/v1/domains/records"
+  },
+  "get_readiness": {
+    "kind": "query",
+    "path": "/api/v1/readiness"
+  },
+  "get_report": {
+    "kind": "report"
+  },
+  "lookup_registration": {
+    "kind": "json",
+    "path": "/api/tools/whois"
+  },
+  "parse_dmarc_report": {
+    "kind": "upload",
+    "path": "/api/tools/dmarc-report-parse",
+    "field": "file"
+  },
+  "scan_domain": {
+    "kind": "json",
+    "path": "/api/v1/scan"
+  },
+  "start_monitoring_signup": {
+    "kind": "json",
+    "path": "/api/v1/signup-url"
+  },
+  "validate_dmarc_record": {
+    "kind": "json",
+    "path": "/api/tools/dmarc-validate"
+  }
+
 }

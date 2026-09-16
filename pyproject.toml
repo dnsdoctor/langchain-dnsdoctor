@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "langchain-dnsdoctor"
-version = "0.1.1"
+version = "0.2.0"
 description = "LangChain tools for DNS Doctor: scan, diagnose and fix a domain's SPF, DMARC and DKIM, check global DNS propagation, audit SPF includes. Deterministic verdicts and copy-paste records from dnsdoctor.dev, never a guessed record."
 readme = "README.md"
 license = "Apache-2.0"
