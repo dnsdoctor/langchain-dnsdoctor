@@ -23,6 +23,10 @@
     "kind": "json",
     "path": "/api/v1/domains/verify"
   },
+  "check_lookalikes": {
+    "kind": "json",
+    "path": "/api/tools/lookalikes"
+  },
   "check_propagation": {
     "kind": "json",
     "path": "/api/tools/propagation-check"
@@ -50,6 +54,10 @@
   "get_domain_records": {
     "kind": "query",
     "path": "/api/v1/domains/records"
+  },
+  "get_lookalikes": {
+    "kind": "query",
+    "path": "/api/v1/lookalikes"
   },
   "get_readiness": {
     "kind": "query",

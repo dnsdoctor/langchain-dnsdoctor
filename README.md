@@ -5,7 +5,7 @@ email authentication (SPF, DMARC, DKIM), check a DNS change from six locations o
 continents, audit an SPF include chain, and read monitoring alerts. Every verdict is
 deterministic and every record comes from a validating engine, never from a language model.
 
-Sixteen tools, the same set the hosted MCP server exposes. Tool names, descriptions and
+Twenty-two tools, the same set the hosted MCP server exposes. Tool names, descriptions and
 input schemas are generated from that server and shipped in `tools.json`; this package
 restates none of them.
 
@@ -15,7 +15,7 @@ restates none of them.
 pip install langchain-dnsdoctor
 ```
 
-Python 3.10+, `langchain-core` 1.x. No API key is needed for the fourteen anonymous tools.
+Python 3.10+, `langchain-core` 1.x. No API key is needed for the sixteen anonymous tools.
 
 ## Use
 
@@ -58,14 +58,17 @@ print(scan.invoke({"domain": "example.com"}))
 | `check_dkim_selector`, `check_record`, `check_reverse_dns`, `check_propagation` | One selector, one record, one IP, or whether a change has gone global |
 | `parse_dmarc_report` | An aggregate report (XML, gzip or zip, base64-encoded) as a source table |
 | `build_parked_domain_records` | The three records that stop a non-sending domain being spoofed |
+| `lookup_registration` | Who a domain is registered with, when it expires, its nameservers and locks (RDAP) |
+| `check_lookalikes` | Which close look-alike names of a domain resolve or accept mail (DNS-only facts, never a verdict) |
 | `start_monitoring_signup` | A signup link that carries the domain into paid monitoring, for a human to open |
-| `get_alerts`, `get_readiness` | Monitoring reads; need `DNSDOCTOR_API_TOKEN` |
+| `get_alerts`, `get_readiness`, `get_lookalikes` | Monitoring reads: alerts, enforcement readiness, watched lookalikes with a threat %; need `DNSDOCTOR_API_TOKEN` |
+| `add_monitored_domain`, `check_domain_verification`, `get_domain_records` | Add a domain to the account's monitoring and read the records it still needs; need `DNSDOCTOR_API_TOKEN` |
 
 ## Environment
 
 | Variable | Effect |
 | --- | --- |
-| `DNSDOCTOR_API_TOKEN` | Optional bearer token. Raises the anonymous rate limit and unlocks the two monitoring reads. Never prompted for. |
+| `DNSDOCTOR_API_TOKEN` | Optional bearer token. Raises the anonymous rate limit and unlocks the six account tools. Never prompted for. |
 | `DNSDOCTOR_API_BASE` | Override the API origin (default `https://dnsdoctor.dev`). |
 
 Past the free per-caller allowance the API answers `402` with an [x402](https://x402.org)

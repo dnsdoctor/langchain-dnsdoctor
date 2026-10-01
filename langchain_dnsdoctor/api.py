@@ -55,7 +55,7 @@ def user_agent() -> str:
 
 def _headers() -> dict[str, str]:
     headers = {"Accept": "application/json", "User-Agent": user_agent()}
-    # A bearer token raises the anonymous budget and unlocks the two monitoring
+    # A bearer token raises the anonymous budget and unlocks the three monitoring
     # reads. Never prompted for, never required.
     token = os.environ.get("DNSDOCTOR_API_TOKEN", "").strip()
     if token:
