@@ -55,6 +55,10 @@
     "kind": "query",
     "path": "/api/v1/domains/records"
   },
+  "get_email_test": {
+    "kind": "query",
+    "path": "/api/tools/email-test"
+  },
   "get_lookalikes": {
     "kind": "query",
     "path": "/api/v1/lookalikes"
@@ -65,6 +69,10 @@
   },
   "get_report": {
     "kind": "report"
+  },
+  "list_email_tests": {
+    "kind": "query",
+    "path": "/api/v1/email-tests"
   },
   "lookup_registration": {
     "kind": "json",
@@ -79,6 +87,10 @@
     "kind": "json",
     "path": "/api/v1/scan"
   },
+  "start_email_test": {
+    "kind": "json",
+    "path": "/api/tools/email-test"
+  },
   "start_monitoring_signup": {
     "kind": "json",
     "path": "/api/v1/signup-url"
@@ -87,5 +99,4 @@
     "kind": "json",
     "path": "/api/tools/dmarc-validate"
   }
-
 }
