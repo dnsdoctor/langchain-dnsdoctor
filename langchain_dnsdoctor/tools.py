@@ -1,4 +1,4 @@
-"""The twenty-five DNS Doctor tools as LangChain ``BaseTool`` instances.
+"""The twenty-seven DNS Doctor tools as LangChain ``BaseTool`` instances.
 
 Definitions come ONLY from ``tools.json`` - the fixture the hosted MCP server
 generates, byte-pinned by the backend suite - so no tool name, description or
@@ -137,7 +137,7 @@ def dnsdoctor_instructions() -> str:
 
 
 class DnsDoctorToolkit(BaseToolkit):
-    """All twenty-five tools (or ``tools=[...]`` for a subset) plus their instructions."""
+    """All twenty-seven tools (or ``tools=[...]`` for a subset) plus their instructions."""
 
     tools: list[str] | None = None
 

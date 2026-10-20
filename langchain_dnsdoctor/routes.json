@@ -15,6 +15,10 @@
     "kind": "json",
     "path": "/api/tools/parked-domain-records"
   },
+  "check_bimi": {
+    "kind": "json",
+    "path": "/api/tools/bimi"
+  },
   "check_dkim_selector": {
     "kind": "json",
     "path": "/api/tools/dkim-check"
@@ -73,6 +77,10 @@
   "list_email_tests": {
     "kind": "query",
     "path": "/api/v1/email-tests"
+  },
+  "list_my_domains": {
+    "kind": "query",
+    "path": "/api/v1/domains/mine"
   },
   "lookup_registration": {
     "kind": "json",
