@@ -23,6 +23,10 @@
     "kind": "json",
     "path": "/api/tools/dkim-check"
   },
+  "check_domain_names": {
+    "kind": "json",
+    "path": "/api/tools/check-names"
+  },
   "check_domain_verification": {
     "kind": "json",
     "path": "/api/v1/domains/verify"
@@ -106,5 +110,9 @@
   "validate_dmarc_record": {
     "kind": "json",
     "path": "/api/tools/dmarc-validate"
+  },
+  "watch_record_change": {
+    "kind": "json",
+    "path": "/api/v1/change-watch"
   }
 }

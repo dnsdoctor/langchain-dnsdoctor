@@ -16,7 +16,7 @@ restates none of them.
 pip install langchain-dnsdoctor
 ```
 
-Python 3.10+, `langchain-core` 1.x. No API key is needed for the nineteen anonymous tools.
+Python 3.10+, `langchain-core` 1.x. No API key is needed for the twenty anonymous tools.
 
 ## Use
 
@@ -68,6 +68,8 @@ print(scan.invoke({"domain": "example.com"}))
 | `add_monitored_domain`, `check_domain_verification`, `get_domain_records` | Add a domain to the account's monitoring and read the records it still needs; need `DNSDOCTOR_API_TOKEN` |
 | `list_email_tests` | The account's recent email tests, newest first; needs `DNSDOCTOR_API_TOKEN` |
 | `list_my_domains` | Every domain on the account with its state and next step; needs `DNSDOCTOR_API_TOKEN` |
+| `check_domain_names` | Which of 1-20 candidate names the registry already holds (registered / not registered / unknown); premium status is not checked |
+| `watch_record_change` | Reads one record and, on wait or edit, starts a free 48-hour watch that emails the token's account once when the change is finished; needs `DNSDOCTOR_API_TOKEN` |
 
 ## Environment
 
