@@ -1,5 +1,7 @@
 # langchain-dnsdoctor
 
+[![PyPI](https://img.shields.io/pypi/v/langchain-dnsdoctor)](https://pypi.org/project/langchain-dnsdoctor/) [![Glama](https://glama.ai/mcp/servers/dnsdoctor/mcp/badges/score.svg)](https://glama.ai/mcp/servers/dnsdoctor/mcp) [![mcp.market](https://mcp.market/badge/dnsdoctor-dns-doctor.svg)](https://mcp.market/server/dnsdoctor-dns-doctor) [![mcptry](https://mcptry.com/badge/dev.dnsdoctor/dns-doctor)](https://mcptry.com/servers/dev.dnsdoctor/dns-doctor) [![mcprush](https://mcprush.com/badge/dns-doctor-mcp/score.svg)](https://mcprush.com/to/dns-doctor-mcp?ref=badge)
+
 LangChain tools for [DNS Doctor](https://dnsdoctor.dev): scan, diagnose and fix a domain's
 email authentication (SPF, DMARC, DKIM), check a DNS change from six locations on four
 continents, audit an SPF include chain, test how a real email authenticates, and read
