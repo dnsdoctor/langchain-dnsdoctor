@@ -1,6 +1,6 @@
 # langchain-dnsdoctor
 
-[![PyPI](https://img.shields.io/pypi/v/langchain-dnsdoctor)](https://pypi.org/project/langchain-dnsdoctor/) [![Glama](https://glama.ai/mcp/servers/dnsdoctor/mcp/badges/score.svg)](https://glama.ai/mcp/servers/dnsdoctor/mcp) [![mcp.market](https://mcp.market/badge/dnsdoctor-dns-doctor.svg)](https://mcp.market/server/dnsdoctor-dns-doctor) [![mcptry](https://mcptry.com/badge/dev.dnsdoctor/dns-doctor)](https://mcptry.com/servers/dev.dnsdoctor/dns-doctor) [![mcprush](https://mcprush.com/badge/dns-doctor-mcp/score.svg)](https://mcprush.com/to/dns-doctor-mcp?ref=badge)
+[![PyPI](https://img.shields.io/pypi/v/langchain-dnsdoctor)](https://pypi.org/project/langchain-dnsdoctor/) [![Glama](https://glama.ai/mcp/servers/dnsdoctor/mcp/badges/score.svg)](https://glama.ai/mcp/servers/dnsdoctor/mcp) [![mcptry](https://mcptry.com/badge/dev.dnsdoctor/dns-doctor)](https://mcptry.com/servers/dev.dnsdoctor/dns-doctor) [![mcprush](https://mcprush.com/badge/dns-doctor-mcp/score.svg)](https://mcprush.com/to/dns-doctor-mcp?ref=badge)
 
 **Get your domain's email working, and know it stays that way.** See why mail lands in spam, get the exact DNS record to fix it, and check the change is live everywhere.
 
