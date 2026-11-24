@@ -78,6 +78,10 @@
   "get_report": {
     "kind": "report"
   },
+  "join_agent_mailbox_waitlist": {
+    "kind": "json",
+    "path": "/api/agent-mailbox/waitlist"
+  },
   "list_email_tests": {
     "kind": "query",
     "path": "/api/v1/email-tests"
